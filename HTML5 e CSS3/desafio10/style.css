@@ -1,0 +1,346 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald&family=Zilla+Slab&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif&display=swap');
+
+
+:root {
+    --cor1: rgb(140, 236, 148);
+    --cor2: rgba(0, 128, 0, 0.158);
+    --cor3: rgb(8, 104, 14);
+
+    --titles: 'Oswald', sans-serif;
+    --texts: 'PT Serif', serif;
+}
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    /*height: 100%;*/
+    /*margin: 0px;
+    padding: 0px;*/
+}
+
+body {
+    background-color: var(--cor1); /*--cor1*/
+}
+
+p {
+    font-family: var(--texts);
+
+    line-height: 2em;
+    font-size: 1em;
+    text-indent: 20px;
+}
+
+strong {
+
+    color:var(--cor3); /*--cor3*/
+}
+
+a {
+    text-decoration: none;
+    background-color: var(--cor2); /*--cor2*/
+    color: var(--cor3); /*--cor3*/
+}
+
+h1 {
+    font-size: 30px;
+}
+
+h2 {
+    font-size: 25px;
+}
+
+
+nav > .m {
+    font-weight: bold;
+    
+    margin: 5px;
+    padding: 10px;
+    
+    border-radius: 15px;
+    
+    margin-bottom: -14px;
+    
+    
+}
+
+.home {
+    display: inline-block;
+}   
+
+.home > a {
+    color: white;
+    
+    text-decoration: none;
+    
+    padding-right: 10px;
+    
+}
+
+.news {
+    display: inline-block;
+}
+
+
+.news > a {
+    color: white;
+    
+    text-decoration: none;
+    
+    padding-right: 10px;
+}
+
+
+
+:hover > .m {
+    border-radius: 5px;
+    padding: 10px;
+    background-color: var(--cor1);
+    /*Ta errado isso aqui :/ */
+    transition-duration: 1s;
+    
+}
+
+
+
+.curi {
+    display: inline-block;
+}
+
+.curi > a {
+    color: white;
+    
+    text-decoration: none;
+    
+    padding-right: 10px;
+}
+
+
+.talk {
+    display: inline-block;
+}
+
+
+.talk > a {
+    color: white;
+    
+    text-decoration: none;
+    
+    padding-right: 10px;
+}
+
+.upper {
+    background-image: linear-gradient(to bottom, rgb(92, 233, 103), rgba(3, 33, 0, 0.863));
+    
+    margin-right: -8px;
+    margin-left: -8px;
+    margin-top: -23px;
+    padding-bottom: 13px;
+    
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.537);
+    
+}
+
+
+.upper > h1 {
+    color: rgb(255, 255, 255);
+    
+    font-size: 3em;
+    
+    text-align: center;
+    
+    padding-top: 15px;
+    border-bottom: -30px;
+    margin-top: 20px;
+    
+    font-family: var(--titles);
+    
+    text-shadow: 2px 2px 0px black;
+}
+
+.upper > p {
+    color: rgb(255, 255, 255);
+    
+    text-align: center;
+    font-size: 1.2em;
+    
+    max-width: 900px;
+    margin: auto;
+    
+    padding: 80px;
+    padding-top: 0px;
+    padding-bottom: 60px;
+}
+
+.main {
+    background-color: white;
+    
+    min-width: 280px;
+    max-width: 800px;
+    
+    margin: auto;
+    
+    margin-top: -25px;
+    
+    padding-left: 10px;
+    padding-right: 10px;    
+    
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    
+    box-shadow: -3px 3px 5px rgba(0, 0, 0, 0.575);
+    
+}
+
+.main > h1 {
+    /*background-image: linear-gradient(to left, white, rgb(159, 241, 164));*/
+    color: rgb(30, 70, 33);
+    
+    margin-left: 0px;
+    margin-right: 0px;
+    
+    font-family: var(--titles);
+}
+
+.main > p {
+    padding-bottom: 5px;
+}
+
+
+.gradient {
+    color:rgb(9, 43, 11);
+    
+    background-image: linear-gradient(to left, white, var(--cor1)); /*--cor1*/
+    
+    font-family: var(--titles);
+    
+    padding-left: 5px;
+}
+
+.middle > p {
+    font-family: var(--texts);
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.about > p > a {
+    text-decoration: none;
+    
+    color: var(--cor3); /*--cor3*/
+    
+    background-color: var(--cor2); /*--cor2*/
+}
+
+/*
+
+}
+
+/*
+.container {
+    background-color:rgb(43, 70, 44);
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625)
+*/
+
+
+
+/* Then style the iframe to fit in the container div with full height and width */
+
+/*
+iframe {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}*/
+
+.video {
+    background-color: var(--cor3);
+    margin-bottom: 30px;
+    margin: 0px -10px 20px -10px;
+    padding: 20px;
+
+    position: relative;
+    padding-bottom: 55%;
+}
+
+.video > iframe {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+
+}
+
+/*daqui pra baixo é: quer saber mais?*/
+
+.know_more > aside {
+    background-color:rgb(193, 243, 197);
+    
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    
+    padding-bottom: 1px;
+    padding-left: 5px;
+    
+}
+
+.know_more > aside > p > a {
+    text-decoration: none;
+    
+    background-color: var(--cor2); /*--cor2*/
+    
+}
+
+.know_more > aside > h3 {
+    font-size: 25px;
+    
+    font-family: var(--titles);
+    
+    background-color: rgb(105, 192, 105);
+    color: rgb(9, 43, 11);
+    
+    border-radius: 10px;
+    
+    padding: 5px;
+    margin-left: -5px;
+    
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+div.break {
+    margin-left: 300px;
+    margin-top: -7.2em;
+}
+
+abbr {
+    text-decoration: underline;
+}
+
+footer {
+    margin-right: -8px;
+    margin-left: -20px;
+    margin-bottom: -20px;
+    
+    
+    background-color: rgba(0, 82, 0, 0.27);
+    text-align: center;
+    
+    padding: 0.1px;
+}  
+
+article a:hover {
+    text-decoration: underline;
+    color: var(--cor3);
+}

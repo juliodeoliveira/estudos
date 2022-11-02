@@ -1,0 +1,11 @@
+a {
+   text-decoration: none;
+   /* Talvez seja inline, troque para display block*/
+   
+   
+}
+
+img {
+   display: inline;
+   padding-bottom: -50px;
+}

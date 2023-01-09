@@ -1,0 +1,44 @@
+body {
+   background-image: url("https://i.pinimg.com/236x/af/e9/11/afe9115ba31670c76dbac39ad8bb95d8.jpg");
+   
+   background-position: center;
+   
+}
+
+.block {
+   margin: 5px;
+   height: 230px;
+   
+   background-image: url("images/wallpaper003.jpg");
+
+   border: 5px solid green;
+
+   border-radius: 20px;
+   /*display: inline-block;*/
+}
+
+#square1 {
+   background-position: left top;
+   border: 5px solid yellow;
+}
+
+#square2 {
+   background-position: left center;
+   border: 5px solid red;
+}
+
+#square3 {
+   background-position: right bottom;
+   border: 5px solid green;
+}
+
+#square4 {
+   background-position: center center;
+   border: 5px solid blue;
+}
+
+a {
+   display: block;
+   text-align: right; 
+}
+

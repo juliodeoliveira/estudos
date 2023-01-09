@@ -1,0 +1,28 @@
+body {
+   background-image: image-set("images/wallpaper004.jpg");
+}
+
+.square {
+
+   background-color: darkblue;
+
+   border-radius: 10px;
+
+   display: inline-block;
+
+   border: 5px solid purple;
+   height: 300px;
+   width: 300px;
+}
+
+#s1 {
+   background-color: skyblue;
+}
+
+#s2 {
+   background-image: linear-gradient(to bottom, darkblue, rgb(99, 99, 255))
+}
+
+#s3 {
+   background-image: url("images/pattern001.png")
+}

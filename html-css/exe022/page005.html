@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Centralização vertical de caixas</title>
+   <style>
+
+      body {
+         position: relative;
+         height: 98vh;
+         background-color: brown;
+         
+         background-size: 100% 100%;
+         background-image: url("images/target001.png");
+      }
+
+      #content {
+         background-size: 100% 100%;
+         background-image: url("images/target001.png");
+
+         height: 200px;
+         width: 400px;
+         
+         position: absolute;
+         left: 50%;
+         top: 50%;
+
+         transform: translate(-50%, -50%);
+
+         background-color: cadetblue;
+      }
+
+   </style>
+</head>
+<body>
+   <article id="content">
+
+
+   </article>
+   
+   
+</html>

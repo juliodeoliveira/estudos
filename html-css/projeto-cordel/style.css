@@ -51,7 +51,7 @@ header {
    text-align: center;
 }
 
-#estrofe1 {
+.estrofe1 {
    margin-left: -8px;
    margin-right: -8px;
   
@@ -60,7 +60,7 @@ header {
    
 }
 
-#estrofe2 {
+.estrofe2 {
    padding: 100px;
    padding-left: 6px;
    margin-left: -8px;
@@ -69,36 +69,40 @@ header {
 
    background-image: url("imagens/background001.jpg");
    background-size: cover;
-   background-repeat: no-repeat;
    background-attachment: fixed;
    background-position: center right;
+   
+   color: white;
 
 }
+.estrofe2 p {
+   background-color: rgba(0, 0, 0, 0.235);
+   max-width: 400px;
+}
 
-#estrofe3 {
-   background-color: white;
+.estrofe4 {
+   padding: 100px;
+   padding-left: 6px;
+   margin-left: -8px;
+   margin-right: -8px;
+   
+   background-image: url("imagens/background002.jpg");
+   background-attachment: fixed;
+   background-position: center center;
 
+   color: white;
+}
+.estrofe4 p {
+   max-width: 400px;
+   background-color: rgba(0, 0, 0, 0.235);
 }
 
 footer {
    margin: -8px;
-   
 
    background-color: black;
    color: white;
 
    text-align: center;
-
    
-}
-
-#estrofe4 {
-   padding: 100px;
-   padding-left: 6px;
-   margin-left: -8px;
-   margin-right: -8px;
-
-   background-image: url("imagens/background002.jpg");
-   background-attachment: fixed;
-   background-position: center center;
 }

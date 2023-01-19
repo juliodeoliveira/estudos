@@ -11,7 +11,7 @@ body {
 
 h1 {
    font-family: 'Passion One', cursive;
-   font-size: 70px;
+   font-size: 10vw;
 
    margin-bottom: 0px;
    padding-top: 50px;
@@ -21,7 +21,7 @@ h1 {
 
 p {
    font-family: 'Sriracha', cursive;
-   font-size: 30px;
+   font-size: 3.5vw;
    
    line-height: 2em;
 
@@ -44,6 +44,8 @@ header {
    margin-left: -8px;
    margin-right: -8px;
 
+   font-size: 1.9vw;
+
    text-align: center;
    background-color: black;
    color: white;
@@ -51,6 +53,7 @@ header {
 
 #title {
 
+   font-size: 1.5em;
    margin-top: 0px;
    padding-bottom: 50px;
 
@@ -78,6 +81,7 @@ header {
    padding-top: 10vh;
    padding-bottom: 10vh;
    padding-left: 10px;
+   
    margin-left: -8px;
    margin-right: -8px;
    
@@ -92,7 +96,8 @@ header {
 }
 .estrofe2 p {
    background-color: rgba(0, 0, 0, 0.235);
-   max-width: 400px;
+   display: inline-block;
+   padding-right: 10px;
 }
 
 .estrofe4 {
@@ -111,7 +116,9 @@ header {
 }
 .estrofe4 p {
    background-color: rgba(0, 0, 0, 0.235);
-   max-width: 400px;
+   display: inline-block;
+   padding-right: 10px;
+   
 }
 
 footer {

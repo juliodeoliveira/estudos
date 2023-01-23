@@ -78,6 +78,8 @@ header {
 }
 
 .estrofe2 {
+   box-shadow: inset 0px 6px 20px 0px rgba(0, 0, 0, 0.503);
+
    padding-top: 10vh;
    padding-bottom: 10vh;
    padding-left: 10px;
@@ -89,7 +91,7 @@ header {
    background-image: url("imagens/background001.jpg");
    background-size: cover;
    background-attachment: fixed;
-   background-position: center right;
+   background-position: right center;
    
    color: white;
 
@@ -97,10 +99,15 @@ header {
 .estrofe2 p {
    background-color: rgba(0, 0, 0, 0.235);
    display: inline-block;
+
    padding-right: 10px;
+   padding-left: 10px;
+   margin-left: 20px;
 }
 
 .estrofe4 {
+   box-shadow: inset 0px 6px 20px 0px rgba(0, 0, 0, 0.503);
+
    padding-top: 10vh;
    padding-bottom: 10vh;
    padding-left: 10px;
@@ -110,14 +117,18 @@ header {
    background-color: lightblue;
    background-image: url("imagens/background002.jpg");
    background-attachment: fixed;
-   background-position: center center;
+   background-position: right center;
+   background-size: cover;
 
    color: white;
 }
 .estrofe4 p {
    background-color: rgba(0, 0, 0, 0.235);
    display: inline-block;
+
    padding-right: 10px;
+   padding-left: 10px;
+   margin-left: 20px;
    
 }
 

@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Tabelas</title>
+</head>
+<body>
+   <style>
+
+      body {
+         height: 100000px;
+      }
+
+      tbody > tr:nth-child(odd) { /* 2n-1 */
+         background-color: rgba(255, 243, 188, 0.753)
+      }
+
+      tbody > tr:nth-child(even) { /* 2n */
+         background-color: rgba(251, 183, 251, 0.753);
+      }
+
+      table {
+         width: 600px;
+         border-collapse: collapse;
+         position: relative;
+      }
+      td, th {
+         text-align: center;
+         border: 1px solid black;
+         padding: 8px;
+
+      }
+
+      thead > tr > th {
+         position: sticky;
+         top: 0;
+         background-color:rgb(146, 146, 146);
+         
+      }
+
+      td {
+         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      }
+
+      tfoot > tr > td {
+         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+         font-weight: bold;
+      }
+
+      thead, tfoot {
+         background-color:rgb(194, 194, 194);
+      }
+
+      caption {
+         font-size: 1.5em;
+         font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+         font-weight: bold;
+         padding: 10px;
+      }
+
+      .linha {
+         background-color: rgb(146, 146, 146);
+      }
+
+      .num {
+         text-align: right;
+         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      }
+
+      .word {
+         text-align: left;
+      }
+
+
+   </style>
+   <h1>Dicas para tabelas grandes</h1>
+   <!--
+      ANATOMIA PARA TABELAS GRANDES:
+         Table
+            Caption
+            Thead
+               tr, td, th
+            Tbody
+               tr, td, th
+            Tfoot
+               tr, td, th
+
+         
+   -->
+   <table>
+      <caption>
+         População do Brasil
+      </caption>
+      <thead>
+         <tr>
+            <th scope="col">Índice</th>
+            <th scope="col">Estados</th>
+            <th scope="col">Polulação</th>
+         </tr>
+      </thead>
+
+
+      <tbody>
+         <tr>
+            <td>1</td>
+            <td>São Paulo</td>
+            <td class="num">41 262 199</td>
+         </tr>
+
+         <tr>
+            <td>2</td>
+            <td>Minas Gerais</td>
+            <td class="num">19 597 330</td>
+         </tr>
+
+         <tr>
+            <td>3</td>
+            <td>Rio de Janeiro</td>
+            <td class="num">15 989 929</td>
+         </tr>
+         
+         <tr>
+            <td>4</td>
+            <td>Bahia</td>
+            <td class="num">14 016 906</td>
+         </tr>
+
+         <tr>
+            <td>5</td>
+            <td>Paraná</td>
+            <td class="num">10 444 526</td>
+         </tr>
+
+         <tr>
+            <td>6</td>
+            <td>Rio Grande do Sul</td>
+            <td class="num">10 693 929</td>
+         </tr>
+
+         <tr>
+            <td>7</td>
+            <td>Pernambuco</td>
+            <td class="num">8 452 381</td>
+         </tr>
+
+         <tr>
+            <td>8</td>
+            <td>Ceará</td>
+            <td class="num">8 452 381</td>
+         </tr>
+
+         <tr>
+            <td>9</td>
+            <td>Pará</td>
+            <td class="num">7 581 051</td>
+         </tr>
+
+         <tr>
+            <td>10</td>
+            <td>Santa Catarina</td>
+            <td class="num">6 248 436</td>
+         </tr>
+
+         <tr>
+            <td>11</td>
+            <td>Goiás</td>
+            <td class="num">6 003 788</td>
+         </tr>
+
+         <tr>
+            <td>12</td>
+            <td>Maranhão</td>
+            <td class="num">6 574 789</td>
+         </tr>
+
+         <tr>
+            <td>13</td>
+            <td>Espírito Santo</td>
+            <td class="num">3 514 952</td>
+         </tr>
+
+         <tr>
+            <td>14</td>
+            <td>Paraíba</td>
+            <td class="num">3 766 528</td>
+         </tr>
+
+         <tr>
+            <td>15</td>
+            <td>Amazonas</td>
+            <td class="num">3 483 985</td>
+         </tr>
+
+         <tr>
+            <td>16</td>
+            <td>Mato Grosso</td>
+            <td class="num">3 035 122</td>
+         </tr>
+
+         <tr>
+            <td>17</td>
+            <td>Rio Grande do Norte</td>
+            <td class="num">3 168 027</td>
+         </tr>
+
+         <tr>
+            <td>18</td>
+            <td>Piauí</td>
+            <td class="num">3 118 360</td>
+         </tr>
+
+         <tr>
+            <td>19</td>
+            <td>Alagoas</td>
+            <td class="num">3 120 494</td>
+         </tr>
+
+         <tr>
+            <td>20</td>
+            <td>Distrito Federal</td>
+            <td class="num">2 923 369</td>
+         </tr>
+
+         <tr>
+            <td>21</td>
+            <td>Mato Grosso do Sul</td>
+            <td class="num">2 449 024</td>
+         </tr>
+
+         <tr>
+            <td>22</td>
+            <td>Sergipe</td>
+            <td class="num">2 068 017</td>
+         </tr>
+
+         <tr>
+            <td>23</td>
+            <td>Rondônia</td>
+            <td class="num">1 562 409</td>
+         </tr>
+
+         <tr>
+            <td>24</td>
+            <td>Tocantins</td>
+            <td class="num">1 383</td>
+         </tr>
+
+         <tr>
+            <td>25</td>
+            <td>Acre</td>
+            <td class="num">733 559</td>
+         </tr>
+
+         <tr>
+            <td>26</td>
+            <td>Amapá</td>
+            <td class="num">669 526</td>
+         </tr>
+
+         <tr>
+            <td>27</td>
+            <td>Roraima</td>
+            <td class="num">450 479</td>
+         </tr>
+
+      </tbody>
+
+
+      <tfoot>
+         <tr>
+            <th></th>
+            <th scope="row">Total de habitantes:</th>
+            <td class="num">190 732 694</td>
+         </tr>
+      </tfoot>
+
+   </table>
+</body>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Exercício de tabela</title>
+   <style>
+      th, td {
+         border: 1px solid black;
+         padding: 8px;
+      }
+
+      table {
+         width: 500px;
+         border-collapse: collapse;
+      }
+
+      .C-nome {
+         background-color: fuchsia;
+      }
+
+      .C-sexo {
+         background-color: chartreuse;
+      }
+
+      .C-idade {
+         background-color: aqua;
+      }
+
+      .C-profisso {
+         background-color: blueviolet;
+      }
+
+   </style>
+</head>
+<body>
+   <table>
+      <colgroup>
+         <col class="C-nome">
+         <col class="C-sexo">
+         <col class="C-idade">
+         <col class="C-profisso">
+         
+      </colgroup>
+      <caption>Cadastro</caption>
+      <tr>
+         <th scope="col">Nome</th>
+         <th scope="col">Sexo</th>
+         <th scope="col">Idade</th>
+         <th scope="col">Profissão</th>
+      </tr>
+
+      <tr>
+         <td>Ana Maria</td>
+         <td>Feminino</td>
+         <td>25</td>
+         <td>Jornalista</td>
+      </tr>
+
+      <tr>
+         <td>Cláudio</td>
+         <td>Masculino</td>
+         <td>28</td>
+         <td>Programador</td>
+      </tr>
+
+      <tr>
+         <td>Gustavo</td>
+         <td>Masculino</td>
+         <td>24</td>
+         <td>Professor</td>
+      </tr>
+
+      <tr>
+         <td>Hélio</td>
+         <td>Masculino</td>
+         <td>19</td>
+         <td>Vendedor</td>
+      </tr>
+
+      <tr>
+         <td>Maria</td>
+         <td>Feminina</td>
+         <td>39</td>
+         <td>Médica</td>
+      </tr>
+
+      <tr>
+         <td>Otávio</td>
+         <td>Masculino</td>
+         <td>22</td>
+         <td>Nutricionista</td>
+      </tr>
+   </table>
+</body>
+</html>

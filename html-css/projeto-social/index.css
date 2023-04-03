@@ -4,18 +4,32 @@
 }
 
 body {
+   background-image: url("pacote/fundo-madeira.jpg");
+   background-size: cover;
+   background-attachment: fixed;
+
    position: relative;
+   
+}
+
+iframe {
+   padding-top: 79px;
+   padding-left: 21px;
+   width: 270px;
+   height: 473px;
+}
+
+.content {
+   position: absolute;
 }
 
 .phone {
-   height: 0px;
-   width: 400px;
+   height: 100px;
+   width: 300px;
+   margin-top: 80px;
+   
    position: absolute;
    left: 50%;
    top: 50%;
    transform: translate(-50%, -50%)
-}
-
-.lilbox {
-   background-color: transparent;
 }

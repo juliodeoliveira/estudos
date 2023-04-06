@@ -45,8 +45,12 @@ iframe {
    border: 1px solid transparent;
 }
 
+
+
 .navigation img:hover {
    border: 1px solid white;
-   transition-duration: 0.4s;
+   margin-top: 13px;
+   margin-bottom: 13px;
+   transition-duration: 1s;
    
 }

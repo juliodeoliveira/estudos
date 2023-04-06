@@ -33,3 +33,20 @@ iframe {
    top: 50%;
    transform: translate(-50%, -50%)
 }
+
+.navigation {
+   float: right;
+}
+
+.navigation img {
+   display: block;
+   border-radius: 100%;
+   width: 45px;
+   border: 1px solid transparent;
+}
+
+.navigation img:hover {
+   border: 1px solid white;
+   transition-duration: 0.4s;
+   
+}

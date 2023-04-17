@@ -1,10 +1,15 @@
+@charset "UTF-8";
+
 :root {
    --background: black;
    --letter: white;
 }
 
+
 body {
    background-image: url("pacote/fundo-madeira.jpg");
+   background-position: top center;
+   background-repeat: no-repeat;
    background-size: cover;
    background-attachment: fixed;
 

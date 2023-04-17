@@ -45,9 +45,9 @@ iframe {
 
 .navigation img {
    display: block;
-   border-radius: 100%;
+   border-radius: 50%;
    width: 45px;
-   border: 1px solid transparent;
+   box-sizing: border-box;
 }
 
 
@@ -56,6 +56,8 @@ iframe {
    border: 1px solid white;
    margin-top: 13px;
    margin-bottom: 13px;
-   transition-duration: 1s;
+   transform: translate(-5px, -5px);
    
+   
+   transition-duration: 1s;
 }

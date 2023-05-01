@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+   <meta charset="UTF-8">
+   <title>Formulário</title>
+</head>
+<body>
+   <h1>Exemplo de formulário</h1>
+   <form action="cadasro.php" method="get" autocomplete="on">
+      
+      <!--Dá pra usar JavaScript para colocar o value de maneira dinâmica-->
+      
+      <p>
+         <label for="name">Nome: </label>
+         <input type="text" name="userName" id="name" placeholder="Digite aqui seu nome!" autocomplete="name" required>
+      </p>
+
+      <p>
+         <label for="nota">Média: </label>
+         <input type="number" name="media" id="nota" required value="5" min="0" max="10" step="0.1">
+      </p>
+
+      <p>
+         <label for="data">Período letivo: </label>
+         <input type="month" name="letivo" id="data" value="2023-05">
+      </p>
+
+      <p>
+         <label for="test">Dia da prova: </label>
+         <input type="date" name="data" id="test" value="2023-05-01">
+      </p>
+
+      <p>
+         <label for="time">Hora da prova: </label>
+         <input type="time" name="hour" id="time">
+      </p>
+   
+      <p>
+         <input type="submit" value="Enviar">
+         <input type="reset" value="Limpar">
+      </p>
+      
+
+   </form>
+</body>
+</html>

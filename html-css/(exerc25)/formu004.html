@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+   <meta charset="UTF-8">
+   <title>Formulário 4</title>
+</head>
+<body>
+   <h1>Formulário exemplo!</h1>
+   <form action="cadrastokk.php" method="get">
+
+      <fieldset>
+         <legend>Informações pessoais</legend>
+         <div>
+            <label for="user_name">Nome: </label>
+            <input type="text" id="user_name" name="u-name" minlength="3" maxlength="20" required>
+         </div>
+         <div>
+            <label for="userEmail">E-mail: </label>
+            <input type="email" name="mail" id="userEmail" placeholder="Seu e-mail" autocomplete="email" required>
+         </div>
+         <div>
+            <label for="phone">Número de telefone: </label>
+            <input type="tel" name="cellphone" id="phone" autocomplete="tel" pattern="^\(\d{2}\)\d{4,5}-\d{4}$" placeholder="(xx)xxxx-xxxx">
+         </div>
+      </fieldset>
+
+      <div>
+         <input type="submit" value="Enviar">
+         <input type="reset" value="Resetar">
+      </div>
+   </form>
+</body>
+</html>

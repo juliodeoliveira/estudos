@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+   <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+
+   <!-- Funciona só em navegador mobile -->
+   <meta name="theme-color" content="#00D4FF">
+   
+   <title>Formulário</title>
+</head>
+<body>
+   <h1>Formulário exemplo</h1>
+
+   <form action="cadastro.php" method="GET" autocomplete="on">
+
+      <fieldset>
+         <legend>Sexo!</legend>
+      
+         <input type="radio" name="gender" id="sexoM" value="M" checked>
+         <label for="sexoM">Masculino</label>
+         
+         <input type="radio" name="gender" id="sexoF" value="F">
+         <label for="sexoF">Feminino</label>
+
+         <input type="radio" name="gender" id="NOsexo">
+         <label for="NOsexo">Não quero informar</label>
+         
+      </fieldset>
+
+      <fieldset>
+         <legend>Esportes favoritos</legend>
+
+         <div>
+            <input type="checkbox" name="favorite" id="basket" checked>
+            <label for="basket">Basquete</label>
+
+         </div>
+
+         <div>
+            <input type="checkbox" name="fute" id="soccer">
+            <label for="soccer">Futebol</label>
+
+         </div>
+
+         <div>
+            <input type="checkbox" name="tenis" id="tennis">
+            <label for="tennis">Tênis</label>
+
+         </div>
+         
+         <div>
+            <input type="checkbox" name="volei" id="volley">
+            <label for="volley">Volleybol</label>
+
+         </div>
+
+      </fieldset>
+
+      <p>
+         <input type="button" value="Concluído">
+         <input type="reset" value="Limpar formulário">
+      </p>
+   </form>
+</body>
+</html>

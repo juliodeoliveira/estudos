@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+   <head>
+      <meta charset="UTF-8">
+      <title>Exemplo de formulário</title>
+
+   </head>
+   <body>
+      <h1>Formulário exercício</h1>
+      <form action="cadrastro.php" method="post">
+         
+         <fieldset>
+            <legend>Aprendendo</legend>
+            <div>
+               <label for="cor">Cor: </label>
+               <input type="color" name="cores" id="cor" value="#00b7ff">
+            </div>
+            <div>
+               <label for="satisfaction">Nível de satisfação com o site: </label>
+               <input type="range" name="level_satisfaction" id="satisfaction" min="0" max="10" value="0">
+            </div>
+
+            <div>
+               <label for="arquivo">Selecione um arquivo: </label>
+               <input type="file" name="file" id="arquivo">
+            </div>
+
+         </fieldset>
+
+
+
+         <div>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Reiniciar">
+         </div>
+      </form>
+   </body>
+</html>

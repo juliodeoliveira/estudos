@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Novo formulário</title>
+</head>
+<body>
+   <h1>Formulário exemplo</h1>
+   <form action="cadrasto.php" method="GET">
+      <div>
+         <label for="selection">Selecione o estado: </label>
+         <select name="selecao" id="selection">
+            <option value="n/a" selected>--- Seu estado ---</option>
+            <optgroup label="Região Sudeste">
+               <option value="RJ">Rio de Janeiro</option>
+               <option value="ES">Espírito Santo</option>
+               <option value="SP">São Paulo</option>
+               <option value="MG">Minas Gerais</option>
+            </optgroup>
+
+            <optgroup label="Região Sul">
+               <option value="RS">Rio Grande do Sul</option>
+               <option value="SC">Santa Catarina</option>
+               <option value="PR">Paraná</option>
+            </optgroup>
+
+            <optgroup label="Região Norte">
+               <option value="AC">Acre</option>
+               <option value="AP">Amapá</option>
+               <option value="AM">Amazonas</option>
+               <option value="PA">Paraná</option>
+               <option value="RO">Rondônia</option>
+               <option value="TO">Tocantins</option>
+               <option value="RR">Roraima</option>
+            </optgroup>
+
+  
+            <optgroup label="Região Nordeste">
+               <option value="AL">Alagoas</option>
+               <option value="BA">Bahia</option>
+               <option value="CE">Ceará</option>
+               <option value="MA">Maranhão</option>
+               <option value="PB">Paraíba</option>
+               <option value="PE">Pernambuco</option>
+               <option value="PI">Piauí</option>
+               <option value="RN">Rio Grande do Norte</option>
+               <option value="SE">Sergipe</option>
+            </optgroup>
+
+            <optgroup label="Região Centro-Oeste">
+               <option value="DF">Distrito Federal</option>
+               <option value="GO">Goiás</option>
+               <option value="MT">Mato Grosso</option>
+               <option value="MS">Mato Grosso do Sul</option>
+            </optgroup>
+         </select>
+      </div>
+
+      <div>
+         <label for="profissao">Sua profissão: </label>
+         <input type="text" name="job" id="profissao" list="listaprofissao">
+         <datalist id="listaprofissao">
+            <option value="Programador">Programador</option>
+            <option value="Engenheiro">Engenheiro</option>
+            <option value="Professor">Professor</option>
+         </datalist>
+      </div>
+
+      <div>
+         <label for="mensage">Digite sua mensagem: </label>
+         <textarea name="text" id="mensage" cols="30" rows="5" placeholder="Digite sua mensagem"></textarea>
+      </div>
+
+      <div>
+         <input type="submit" value="Enviar">
+         <input type="reset" value="Apagar">
+   
+      </div>
+   </form>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Formuláriosss</title>
+</head>
+<body>
+   <h1>Formulário range</h1>
+   <form action="cradasto.php" method="get">
+      <div>
+         <label for="barra">Primeiro número: </label>
+         <input type="range" name="range" id="barra" value="0" oninput="resultado.innerHTML = barra.value">
+         <output id="resultado">0</output>%
+      </div>
+
+
+      <div>
+         <input type="submit" value="Enviar">
+         <input type="reset" value="Resetar">
+      </div>
+      
+   </form>
+</body>
+</html>

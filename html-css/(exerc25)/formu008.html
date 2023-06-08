@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Output de formulário</title>
+</head>
+<body>
+   <h1>Exemplo de formulário</h1>
+   <form method="post">
+      <div>
+         <label for="number1">Digite o <strong>primeiro</strong> número: </label>
+         <input type="number" name="numero1" id="number1" required min="0" oninput="out.innerHTML = Number(number1.value) + Number(number2.value)">
+
+      </div>
+
+      <div>
+         <label for="number2">Digite o <strong>segundo</strong> número: </label>
+         <input type="number" name="número2" id="number2" required min="0" oninput="out.innerHTML = Number(number1.value) + Number(number2.value)">
+      </div>
+
+      <div>
+         <label for="screen">A soma é</label>
+         <output id="out">0</output>
+      </div>
+
+      <div>
+         <input type="button" value="Enviar" onclick="calculate()">
+         <input type="reset" value="Resetar">
+      </div>
+   </form>
+
+   <script src="./code.js"></script>
+</body>
+</html>

@@ -3,7 +3,12 @@
 /* Estilo para telas */
 
 * {
-   margin: 0px;
+   margin: 10px;
    padding: 0px;
    font-family: sans-serif;
+}
+
+iframe {
+   box-shadow: -5px 5px 15px;
+   border-radius: 15px;
 }
